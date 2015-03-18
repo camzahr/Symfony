@@ -1,0 +1,9 @@
+{
+  "require": {
+    "twig/extensions": "~1.0"
+    "php": ">=5.3.3",
+    "incenteev/composer-parameter-handler": "~2.0",
+    "doctrine/doctrine-fixtures-bundle": "~2.2"
+    "doctrine/doctrine-fixtures-bundle": "dev-master"
+  }
+}
