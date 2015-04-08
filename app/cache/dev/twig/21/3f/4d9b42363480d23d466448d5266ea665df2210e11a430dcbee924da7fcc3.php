@@ -68,12 +68,16 @@ class __TwigTemplate_213f4d9b42363480d23d466448d5266ea665df2210e11a430dcbee924da
             echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "title", array()), "html", null, true);
             echo "
         </a>
-        By ";
+        ";
             // line 19
+            echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "price", array()), "html", null, true);
+            echo " \$ per month,
+        by ";
+            // line 20
             echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "author", array()), "html", null, true);
             echo ",
         the ";
-            // line 20
+            // line 21
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["advert"], "date", array()), "d/m/Y"), "html", null, true);
             echo "
       </li>
@@ -81,14 +85,14 @@ class __TwigTemplate_213f4d9b42363480d23d466448d5266ea665df2210e11a430dcbee924da
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 23
+            // line 24
             echo "      <li>Pas (encore !) d'annonces</li>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['advert'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 25
+        // line 26
         echo "  </ul>
 
 ";
@@ -106,6 +110,6 @@ class __TwigTemplate_213f4d9b42363480d23d466448d5266ea665df2210e11a430dcbee924da
 
     public function getDebugInfo()
     {
-        return array (  92 => 25,  85 => 23,  77 => 20,  73 => 19,  68 => 17,  64 => 16,  61 => 15,  56 => 14,  50 => 10,  47 => 9,  40 => 6,  37 => 5,  11 => 3,);
+        return array (  96 => 26,  89 => 24,  81 => 21,  77 => 20,  73 => 19,  68 => 17,  64 => 16,  61 => 15,  56 => 14,  50 => 10,  47 => 9,  40 => 6,  37 => 5,  11 => 3,);
     }
 }

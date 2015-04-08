@@ -47,19 +47,23 @@ class __TwigTemplate_35bc3bca1c148795c6b1faa9dc30651a83958f2a5e411601849cace2a88
     public function block_ocplatform_body($context, array $blocks = array())
     {
         // line 10
-        echo "  <h2>";
+        echo "  ";
         // line 11
         if ( !(null === $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "image", array()))) {
             // line 12
-            echo "  
+            echo "  <h4><img src=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl($this->getAttribute($this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "image", array()), "url", array())), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "image", array()), "alt", array()), "html", null, true);
+            echo "\" height=\"300\" width=\"400\"/></h4>
 ";
         }
-        // line 13
-        echo "</h2>
-  <h2>";
         // line 14
+        echo "  <h2>";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "title", array()), "html", null, true);
-        echo "</h2>
+        echo " : ";
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "price", array()), "html", null, true);
+        echo " \$ per Month</h2>
   <i>By ";
         // line 15
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "author", array()), "html", null, true);
@@ -104,7 +108,7 @@ class __TwigTemplate_35bc3bca1c148795c6b1faa9dc30651a83958f2a5e411601849cace2a88
         if ( !$this->getAttribute($this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "categories", array()), "empty", array())) {
             // line 38
             echo "  <p>
-    Cette annonce est parue dans les catégories suivantes :
+    Categories :
     ";
             // line 40
             $context['_parent'] = (array) $context;
@@ -197,6 +201,6 @@ class __TwigTemplate_35bc3bca1c148795c6b1faa9dc30651a83958f2a5e411601849cace2a88
 
     public function getDebugInfo()
     {
-        return array (  183 => 58,  178 => 55,  167 => 53,  163 => 52,  158 => 49,  156 => 48,  151 => 45,  147 => 43,  133 => 42,  127 => 41,  110 => 40,  106 => 38,  104 => 37,  94 => 30,  87 => 26,  80 => 22,  73 => 18,  65 => 15,  61 => 14,  58 => 13,  54 => 12,  52 => 11,  50 => 10,  47 => 9,  40 => 6,  37 => 5,  11 => 3,);
+        return array (  187 => 58,  182 => 55,  171 => 53,  167 => 52,  162 => 49,  160 => 48,  155 => 45,  151 => 43,  137 => 42,  131 => 41,  114 => 40,  110 => 38,  108 => 37,  98 => 30,  91 => 26,  84 => 22,  77 => 18,  69 => 15,  62 => 14,  54 => 12,  52 => 11,  50 => 10,  47 => 9,  40 => 6,  37 => 5,  11 => 3,);
     }
 }

@@ -18,6 +18,7 @@ class AdvertType extends AbstractType
       ->add('content',   'textarea')
       ->add('published', 'checkbox', array('required' => false))
       ->add('image',      new ImageType())
+      ->add('price',      'integer')
       /*
        * Rappel :
        ** - 1er argument : nom du champ, ici « categories », car c'est le nom de l'attribut

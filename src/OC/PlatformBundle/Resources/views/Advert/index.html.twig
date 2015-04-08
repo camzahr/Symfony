@@ -16,7 +16,8 @@
         <a href="{{ path('oc_platform_view', {'id': advert.id}) }}">
           {{ advert.title }}
         </a>
-        By {{ advert.author }},
+        {{ advert.price }} $ per month,
+        by {{ advert.author }},
         the {{ advert.date|date('d/m/Y') }}
       </li>
     {% else %}

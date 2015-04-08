@@ -7,11 +7,11 @@
 {% endblock %}
 
 {% block ocplatform_body %}
-  <h2>{# On vérifie qu'une image soit bien associée à l'annonce #}
+  {# On vérifie qu'une image soit bien associée à l'annonce #}
 {% if advert.image is not null %}
-  
-{% endif %}</h2>
-  <h2>{{ advert.title }}</h2>
+  <h4><img src="{{ asset(advert.image.url) }}" alt="{{ advert.image.alt }}" height="300" width="400"/></h4>
+{% endif %}
+  <h2>{{ advert.title }} : {{ advert.price }} $ per Month</h2>
   <i>By {{ advert.author }}, the {{ advert.date|date('d/m/Y') }}</i>
 
   <div class="well">
@@ -36,7 +36,7 @@
   <p>
   {% if not advert.categories.empty %}
   <p>
-    Cette annonce est parue dans les catégories suivantes :
+    Categories :
     {% for category in advert.categories %}
       {{ category.name }}{% if not loop.last %}, {% endif %}
     {% endfor %}

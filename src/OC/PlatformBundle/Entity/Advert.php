@@ -26,6 +26,11 @@ class Advert
   private $date;
 
   /**
+   * @ORM\Column(name="price", type="integer")
+   */
+  private $price;
+
+  /**
    * @ORM\Column(name="title", type="string", length=255, unique=true)
    */
   private $title;
@@ -272,4 +277,50 @@ class Advert
   {
     $this->nbApplications--;
   }
+
+    /**
+     * Set price
+     *
+     * @param integer $price
+     * @return Advert
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
+    /**
+     * Get price
+     *
+     * @return integer 
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * Set nbApplications
+     *
+     * @param integer $nbApplications
+     * @return Advert
+     */
+    public function setNbApplications($nbApplications)
+    {
+        $this->nbApplications = $nbApplications;
+
+        return $this;
+    }
+
+    /**
+     * Get nbApplications
+     *
+     * @return integer 
+     */
+    public function getNbApplications()
+    {
+        return $this->nbApplications;
+    }
 }
