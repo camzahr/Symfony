@@ -60,10 +60,10 @@ class __TwigTemplate_35bc3bca1c148795c6b1faa9dc30651a83958f2a5e411601849cace2a88
         // line 14
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "title", array()), "html", null, true);
         echo "</h2>
-  <i>Par ";
+  <i>By ";
         // line 15
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "author", array()), "html", null, true);
-        echo ", le ";
+        echo ", the ";
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "date", array()), "d/m/Y"), "html", null, true);
         echo "</i>
 
@@ -80,21 +80,21 @@ class __TwigTemplate_35bc3bca1c148795c6b1faa9dc30651a83958f2a5e411601849cace2a88
         echo $this->env->getExtension('routing')->getPath("oc_platform_home");
         echo "\" class=\"btn btn-default\">
       <i class=\"glyphicon glyphicon-chevron-left\"></i>
-      Retour à la liste
+      Back
     </a>
     <a href=\"";
         // line 26
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("oc_platform_edit", array("id" => $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "id", array()))), "html", null, true);
         echo "\" class=\"btn btn-default\">
       <i class=\"glyphicon glyphicon-edit\"></i>
-      Modifier l'annonce
+      Modify
     </a>
     <a href=\"";
         // line 30
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("oc_platform_delete", array("id" => $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "id", array()))), "html", null, true);
         echo "\" class=\"btn btn-danger\">
       <i class=\"glyphicon glyphicon-trash\"></i>
-      Supprimer l'annonce
+      Delete
     </a>
   </p>
 

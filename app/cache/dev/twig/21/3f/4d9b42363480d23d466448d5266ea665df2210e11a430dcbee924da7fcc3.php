@@ -48,7 +48,7 @@ class __TwigTemplate_213f4d9b42363480d23d466448d5266ea665df2210e11a430dcbee924da
     {
         // line 10
         echo "
-  <h2>Liste des annonces</h2>
+  <h2>List of cars</h2>
 
   <ul>
     ";
@@ -68,11 +68,11 @@ class __TwigTemplate_213f4d9b42363480d23d466448d5266ea665df2210e11a430dcbee924da
             echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "title", array()), "html", null, true);
             echo "
         </a>
-        par ";
+        By ";
             // line 19
             echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "author", array()), "html", null, true);
             echo ",
-        le ";
+        the ";
             // line 20
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["advert"], "date", array()), "d/m/Y"), "html", null, true);
             echo "

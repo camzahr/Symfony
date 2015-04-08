@@ -37,7 +37,7 @@ class __TwigTemplate_67b7e7abdebd1d1a716f98d3ca6acb9ca0812869cacd780cb412b8fc630
     {
         // line 6
         echo "
-  <h2>Ajouter une annonce</h2>
+  <h2>Add an announce</h2>
 
   ";
         // line 9
@@ -45,8 +45,7 @@ class __TwigTemplate_67b7e7abdebd1d1a716f98d3ca6acb9ca0812869cacd780cb412b8fc630
         echo "
 
   <p>
-    Attention : cette annonce sera ajoutée directement
-    sur la page d'accueil après validation du formulaire.
+    Warning : the announce will be published on the Main Page directly after your submission.
   </p>
 
 ";

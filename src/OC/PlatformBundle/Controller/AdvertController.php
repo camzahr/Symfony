@@ -121,7 +121,7 @@ class AdvertController extends Controller
     }
 
     if ($request->isMethod('POST')) {
-      // Si la requête est en POST, on deletea l'article
+      // Si la requête est en POST, on delete l'article
 
       $request->getSession()->getFlashBag()->add('info', 'Annonce bien supprimée.');
 

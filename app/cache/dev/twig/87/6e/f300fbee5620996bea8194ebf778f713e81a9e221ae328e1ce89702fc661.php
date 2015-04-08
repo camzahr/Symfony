@@ -41,43 +41,35 @@ class __TwigTemplate_876ef300fbee5620996bea8194ebf778f713e81a9e221ae328e1ce89702
 <body>
   <div class=\"container\">
     <div id=\"header\" class=\"jumbotron\">
-      <h1>Ma plateforme d'annonces</h1>
-      <p>
-        Ce projet est propulsé par Symfony2,
-        et construit grâce au MOOC OpenClassrooms et SensioLabs.
-      </p>
-      <p>
-        <a class=\"btn btn-primary btn-lg\" href=\"http://fr.openclassrooms.com/informatique/cours/developpez-votre-site-web-avec-le-framework-symfony2\">
-          Participer au MOOC »
-        </a>
-      </p>
+      <h1>The K-App</h1>
+      
     </div>
 
     <div class=\"row\">
       <div id=\"menu\" class=\"col-md-3\">
-        <h3>Les annonces</h3>
+        <h3>Menu</h3>
         <ul class=\"nav nav-pills nav-stacked\">
           <li><a href=\"";
-        // line 36
+        // line 28
         echo $this->env->getExtension('routing')->getPath("oc_platform_home");
-        echo "\">Accueil</a></li>
+        echo "\">Index</a></li>
           <li><a href=\"";
-        // line 37
+        // line 29
         echo $this->env->getExtension('routing')->getPath("oc_platform_add");
-        echo "\">Ajouter une annonce</a></li>
+        echo "\">Add an announce</a></li>
         </ul>
 
-        <h4>Dernières annonces</h4>
+        <h4>Last Announces</h4>
         ";
-        // line 41
+        // line 33
         echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("OCPlatformBundle:Advert:menu", array("limit" => 3)));
         echo "
       </div>
       <div id=\"content\" class=\"col-md-9\">
         ";
-        // line 44
+        // line 36
         $this->displayBlock('body', $context, $blocks);
-        // line 46
+        // line 38
         echo "      </div>
     </div>
 
@@ -85,16 +77,16 @@ class __TwigTemplate_876ef300fbee5620996bea8194ebf778f713e81a9e221ae328e1ce89702
 
     <footer>
       <p>The sky's the limit © ";
-        // line 52
+        // line 44
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " and beyond.</p>
     </footer>
   </div>
 
   ";
-        // line 56
+        // line 48
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 61
+        // line 53
         echo "
 </body>
 </html>";
@@ -116,19 +108,19 @@ class __TwigTemplate_876ef300fbee5620996bea8194ebf778f713e81a9e221ae328e1ce89702
   ";
     }
 
-    // line 44
+    // line 36
     public function block_body($context, array $blocks = array())
     {
-        // line 45
+        // line 37
         echo "        ";
     }
 
-    // line 56
+    // line 48
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 57
+        // line 49
         echo "    ";
-        // line 58
+        // line 50
         echo "    <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>
     <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>
   ";
@@ -146,6 +138,6 @@ class __TwigTemplate_876ef300fbee5620996bea8194ebf778f713e81a9e221ae328e1ce89702
 
     public function getDebugInfo()
     {
-        return array (  132 => 58,  130 => 57,  127 => 56,  123 => 45,  120 => 44,  115 => 13,  113 => 12,  110 => 11,  104 => 9,  98 => 61,  96 => 56,  89 => 52,  81 => 46,  79 => 44,  73 => 41,  66 => 37,  62 => 36,  39 => 15,  37 => 11,  32 => 9,  23 => 2,);
+        return array (  124 => 50,  122 => 49,  119 => 48,  115 => 37,  112 => 36,  107 => 13,  105 => 12,  102 => 11,  96 => 9,  90 => 53,  88 => 48,  81 => 44,  73 => 38,  71 => 36,  65 => 33,  58 => 29,  54 => 28,  39 => 15,  37 => 11,  32 => 9,  23 => 2,);
     }
 }

@@ -12,7 +12,7 @@
   
 {% endif %}</h2>
   <h2>{{ advert.title }}</h2>
-  <i>Par {{ advert.author }}, le {{ advert.date|date('d/m/Y') }}</i>
+  <i>By {{ advert.author }}, the {{ advert.date|date('d/m/Y') }}</i>
 
   <div class="well">
     {{ advert.content }}
@@ -21,15 +21,15 @@
   <p>
     <a href="{{ path('oc_platform_home') }}" class="btn btn-default">
       <i class="glyphicon glyphicon-chevron-left"></i>
-      Retour à la liste
+      Back
     </a>
     <a href="{{ path('oc_platform_edit', {'id': advert.id}) }}" class="btn btn-default">
       <i class="glyphicon glyphicon-edit"></i>
-      Modifier l'annonce
+      Modify
     </a>
     <a href="{{ path('oc_platform_delete', {'id': advert.id}) }}" class="btn btn-danger">
       <i class="glyphicon glyphicon-trash"></i>
-      Supprimer l'annonce
+      Delete
     </a>
   </p>
 

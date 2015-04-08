@@ -38,7 +38,7 @@ class __TwigTemplate_4cf40d68b2a89d48098a0fa1d2f4f0f6d244c9203ff1424da6b23fd520d
     public function block_title($context, array $blocks = array())
     {
         // line 6
-        echo "  Annonces - ";
+        echo "  Announces - ";
         $this->displayParentBlock("title", $context, $blocks);
         echo "
 ";
@@ -51,7 +51,7 @@ class __TwigTemplate_4cf40d68b2a89d48098a0fa1d2f4f0f6d244c9203ff1424da6b23fd520d
         echo "
   ";
         // line 12
-        echo "  <h1>Annonces</h1>
+        echo "  <h1>Announces</h1>
 
   <hr>
 
