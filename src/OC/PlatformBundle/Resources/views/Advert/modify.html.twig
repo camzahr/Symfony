@@ -1,0 +1,21 @@
+{# src/OC/PlatformBundle/Resources/views/Advert/modify.html.twig #}
+{% extends "PlatformBundle::layout.html.twig" %}
+{% block title %}
+  Modifier un article - {{ parent() }}
+{% endblock %}
+{% block sdzblog_body %}
+  <h2>Modifier un article</h2>
+  {% include "PlatformBundle:Blog:formulaire.html.twig" %}
+  <p>
+    Vous Ã©ditez un article dÃ©jÃ  existant,
+    ne le changez pas trop pour Ã©viter
+    aux membres de ne pas comprendre
+    ce qu'il se passe.
+  </p>
+  <p>
+    <a href="{{ path('sdzblog_voir', {'slug': article.slug}) }}" class="btn">
+      <i class="icon-chevron-left"></i>
+      Retour Ã  l'article
+    </a>
+  </p>
+{% endblock %}

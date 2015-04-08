@@ -92,4 +92,14 @@ class AdvertRepository extends EntityRepository
     return $results;
   }
 
+  public function getAdverts()
+  {
+    $query = $this->createQueryBuilder('a')
+      ->orderBy('a.date', 'DESC')
+      ->getQuery()
+    ;
+
+    return $query->getResult();
+  }
+
 }
