@@ -25,4 +25,35 @@
     {% endfor %}
   </ul>
 
+  <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Date</th>
+                <th>Publishedat</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for advert in listAdverts %}
+            <tr>
+                <td>{{ advert.id }}</a></td>
+                <td>{{ advert.title }}</td>
+                <td>{{ advert.author }}</td>
+                <td>{{ advert.date|date('d/m/Y') }}</td>
+                <td>{{ advert.price }}</td>
+                
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            
+        </li>
+    </ul>
+
 {% endblock %}

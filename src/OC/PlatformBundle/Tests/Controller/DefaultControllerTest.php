@@ -12,6 +12,6 @@ class DefaultControllerTest extends WebTestCase
 
         $crawler = $client->request('GET', '/platform');
 
-        $this->assertTrue($crawler->filter('html:contains("Recherche développpeur Symfony2")')->count() > 0);
+        $this->assertTrue($crawler->filter('html:contains("Ferrari")')->count() > 0);
     }
 }
